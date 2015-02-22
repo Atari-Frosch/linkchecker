@@ -21,7 +21,7 @@ class linkchecker(object):
         checkhost = ""
         try:
             checkhost = str(sh.host(hostname))
-                    except Exception as ex:
+        except Exception as ex:
             print "no host", ex
         self.debug("Reply from host command: " + checkhost)
         if "not found" in checkhost or checkhost == "":
